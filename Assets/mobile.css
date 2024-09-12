@@ -1,0 +1,253 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{font-size: 30%;
+}
+.section1{position: fixed;
+    width: 100vw;
+    height: 5vh;
+    background-color: antiquewhite;
+    z-index: 1;
+}
+.flexnav{display: flex;
+    justify-content: left;
+}
+.nav{width: 100vw;
+    
+}
+ul{list-style-type: none;
+}
+li a {
+    overflow: hidden;
+    float: left;
+    padding: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+.section2{position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    
+}
+.bg{position: absolute;
+    width: 100vw;
+    left: 15%;
+    top: 20%;
+    
+}
+.pic{border-radius: 45%;
+    width: 20%;
+    height: 20%;
+    border: 20px double gray;
+    border-spacing: 50px;
+ 
+   
+}
+.hello{position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.hello h2{font-size: 10rem;
+
+}
+.hello h6{font-size: 4rem;
+}
+.hello p {font-size: 2rem;
+}
+.section3{
+    width: 100vw;
+    height: 300vh;
+    background-color: gray;
+}
+
+.work{margin: 7rem;
+    text-align: center;
+    font-size: 4rem;
+    color: antiquewhite;
+
+
+}
+.flex1{display: flex;
+    justify-content: center;
+    margin-left: 7.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.door{
+    font-size: 2rem;
+}
+.door a:hover {color: antiquewhite;
+    text-decoration: none;
+}
+.grape {
+    font-size: 2rem;
+    text-decoration: none;
+}
+.grape a:hover{color: antiquewhite;
+
+}
+.flex2{display: flex;
+    justify-content: center;
+    margin-left: 7.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.kado{
+    font-size: 2rem;
+}
+.kado a:hover{color: antiquewhite;
+}
+.coin{
+    font-size: 2rem;
+}
+.coin a:hover{color: antiquewhite;
+}
+.flex3 {display: flex;
+    justify-content: center;
+    margin-left: 7.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.thre{
+    font-size: 2rem;
+}
+.thre a:hover{color: antiquewhite;
+}
+.veph{
+    font-size: 2rem;
+}
+.veph a:hover{color: antiquewhite;
+}
+.flex4{display: flex;
+    justify-content: center;
+    margin-left: 7.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+}
+.scot{
+   
+    font-size: 2rem;
+}
+.scot a:hover{color: antiquewhite;
+}
+.pac{
+    font-size: 2rem;
+}
+.pac a:hover{color: antiquewhite;
+}
+.section4{
+    width: 100vw;
+    height: 70vh;
+    background-color: gray;
+}
+.about{text-align: center;
+    padding-top: 5%;
+    font-size: 4.5rem;
+    color: antiquewhite;
+}
+.flex5{display: flex;
+    justify-content: center;
+    
+}
+.edu {
+    left: 5%;
+    border: 3px dotted antiquewhite;
+    width: 40vw;
+    padding: 10px;
+    line-height: 350%;
+    margin: 5rem;
+    
+}
+.edu h2{color: antiquewhite;
+    font-size: 3.5rem;
+}
+.edu h6{color: aliceblue;
+    font-size: 2rem;
+}
+.edu h4 {font-size: 2.5rem;
+    color: aliceblue;
+}
+.edu p {font-size: 2rem;
+    color: greenyellow;
+}
+.edu h5{font-size: 2rem;
+    color: aliceblue;
+
+}
+.exp{
+    margin: 5rem;
+    padding: 10px;
+    line-height: 350%;
+    border: 3px dotted antiquewhite;
+    width: 40vw;
+}
+.exp h2{color: antiquewhite;
+    font-size: 3.5rem;
+}
+.exp h4{font-size: 2.5rem;
+    color: aliceblue;
+}
+.exp p{font-size: 2rem;
+    color: greenyellow;
+}
+.flex6{display: flex;
+    justify-content: center;
+}
+.cv a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: black;
+    padding: 15px;
+    font-size: 1.875rem;
+
+}
+.section5{
+    width: 100vw;
+    height: 60vh;
+    background-color: coral;
+}
+.flex7{display: flex;
+    justify-content: center;
+    
+}
+.footer{color: white;
+}
+.footer h3 {font-size: 5rem;
+    text-align: center;
+    padding-top: 2%;
+}
+.footer a{margin-left: 0rem;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid antiquewhite;
+    color: black;
+    padding: 15px;
+    border-radius: 20%;
+    font-size: 2rem;
+    
+}
+.social{
+    margin-top: 0rem;
+    z-index: 1;
+    width: 100vw;
+
+}
+.footer ul{list-style-type: none;
+
+}
+.footer li a{
+    padding: 20PX;
+    font-size: 2rem;
+    color: antiquewhite;
+    overflow: hidden;
+    
+}
+.copy p{color: antiquewhite;
+    font-size: 2rem;
+}
