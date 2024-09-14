@@ -46,8 +46,8 @@ html{font-size: 62.5%;
 }
 .nav-links li a {
     overflow: hidden;
-    padding: 2rem;
-    font-size: 2.5rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -58,7 +58,7 @@ html{font-size: 62.5%;
 .nav-links a:hover{
     background-color: rgb(47, 36, 124);
     color: #cac9c7;
-    font-size: 2.8rem;
+    font-size: 2rem;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -94,28 +94,32 @@ html{font-size: 62.5%;
 
 }
 .hello h6{font-size: 3rem;
+    animation: fadeIn 2s ease-in-out infinite;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .hello p {font-size: 2rem;
 }
-.button {
-    display: inline-block;
-    margin: 1rem;
-    padding: 1rem;
-    background-color:rgb(13, 89, 89);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5rem;
-    width: 15%;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-  
-  }
-  .button:hover{
-    background-color: rgb(47, 36, 124);
-    color: #cac9c7;
-    padding: 1.5rem;
-  }
+.hello-soc{
+    display: flex;
+}
+.handles{
+    display: flex;
+    list-style-type: none;
+}
+.handles li a{
+    padding-right: 1rem;
+    font-size: 2.5rem;
+    color: black;
+}
 .section3{
    
     background-color: rgba(240, 243, 243, 0.854);
@@ -139,189 +143,128 @@ html{font-size: 62.5%;
     padding: 5rem;
     gap: 15rem;
     flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
 }
 .about-img{
-    width: 35%;
-    padding-left: 2rem;
+    width: 30%;
+   
 }
 .about-img img{
-    width: 100%;
+    max-width: 100%;
+    
 }
 .about-me h1{
     color: rgb(47, 36, 124);
     font-size: 4rem;
 }
 .about-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
     width: 50%;
     text-align: left;
+    min-height: 50%;
 }
 .about-text h3{
     color: rgb(47, 36, 124);
 }
 .abi{
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 .sec-text{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
-
-.work{
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: rgb(47, 36, 124);
-
+.my-cv{
+    background-color: rgb(47, 36, 124);
+    padding: 1rem;
+    border-radius: 5rem;
 
 }
-
-.door img,
-.grape img,
-.coin img,
-.kado img,
-.grape img,
-.thre img,
-.pac img,
-.veph img,
-.scot img,
-.edu img,
-.exp img{
-    border-radius: 3rem;
-    border: 0.5rem solid rgb(47, 36, 124);
-    box-shadow: rgba(0,0,0,0.5);
-}
-.door{
-    width: 30%;
-    margin: 2rem;
-}
-.door a{
-    font-size: 3rem;
-    color: black;
+.my-cv a{
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;  
 }
-.door a:hover {color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
+.my-cv:hover{
+    background-color: #461f5c;
 }
-.grape {
-    width: 30%;
-    margin: 2rem;
-}
-.grape a {
-    font-size: 3rem;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.grape a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-
-}
-.kado{
-    width: 30%;
-    margin: 2rem;
-}
-.kado a{
-    font-size: 3rem;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-.kado a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.coin{
-    width: 30%;
-    margin: 2rem;
-}
-.coin a{
-    font-size: 3rem;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.coin a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.flex3 {display: flex;
-    flex-wrap: wrap;
+.my-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(214, 212, 229);
     padding: 5rem;
 }
-.thre{
-    width: 30%;
-    margin: 2rem
+.my-skills .progress-container{
+    margin-bottom: 25px;
 }
-.thre a{
-    font-size: 3rem;
+.my-skills .progress-container h4{
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
     color: black;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1.85rem;
 }
-.thre a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
+.my-skills .progress-container .progress-bar{
+    position: relative;
+    width: 500px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 3px 4px 5px 0px rgba(204, 185, 185, 0.75);
 }
-.veph {
-    width: 30%;
-    margin: 2rem;
+.progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0.2rem;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(68, 59, 130, 0.7) 50%, rgba(21, 83, 176,1) 100% );
+    transition: width .5s linear;
 }
-.veph a{
-    font-size: 3rem;
-    font-weight: bold;
+.skills-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5rem;
+}
+.work{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
     color: black;
+    padding-top: 3rem;
+}
+.work h2{
+    color: rgb(47, 36, 124);
+}
+
+.flex3{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 5em;
+    gap: 4rem;
+    max-width: 85%;
+    margin: 0 auto;
+}
+.flex3 a{
     text-decoration: none;
-}
-.veph a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.scot{
-    width: 30%;
-    margin: 2rem;
-}
-.scot a{
-    font-size: 3rem;
-    font-weight: bold;
     color: black;
-    text-decoration: none;
-}
-.scot a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
+    font-size: 1.85rem;
     font-weight: bold;
 }
-.pac{
-    width: 30%;
-    margin: 2rem;
+.flex3 img:hover{
+    width: 99%;
 }
-.pac a{
-    font-size: 3rem;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.pac a:hover{color: rgb(47, 36, 124);
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.section4{
- 
-    background-color: rgba(240, 243, 243, 0.854);
-}
+
 .myresume{
     max-width: 100%;
    margin: 0 auto;
@@ -372,42 +315,19 @@ html{font-size: 62.5%;
     padding: 2rem;
 
 }
-.exp{
-   
-    padding: 10px;
-    line-height: 350%;
-    border: 0.2rem dotted rgb(13, 89, 89);
-    width: 40%;
-    
+.my-skills h6{
+    font-size: 1.8rem;
 }
-.exp h2{color: rgb(47, 36, 124);
-    font-size: 3.5rem;
-    padding: 2rem;
-}
-.exp h4{font-size: 2.5rem;
+.my-skills h3{
+    font-size: 2.5rem;
     color: rgb(47, 36, 124);
-    padding: 2rem;
 }
-.exp p{font-size: 2rem;
+.my-skills p{font-size: 1.5rem;
     color: black;
     padding: 2rem;
-    font-weight: bold;
-}
-.flex6{display: flex;
-    justify-content: center;
-}
-.cv a{
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 2rem;
-
-}
-.cv a:hover{
-    background-color: rgb(47, 36, 124);
-    color: #cac9c7;
+    font-weight: 500;
+    width: 60%;
+    text-align: center;
 }
 .cont{color: rgb(47, 36, 124);
     display: flex;
@@ -417,9 +337,17 @@ html{font-size: 62.5%;
     margin: 2rem;
 
 }
-.cont h3 {font-size: 5rem;
+.cont h6{
+    font-size: 2rem;
+    color: black;
+}
+.cont h4{
+    font-size: 2rem;
+    color: black;
+}
+.cont h3 {font-size: 3rem;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1%;
     font-weight: bold;
 }
 .cont a{
@@ -429,9 +357,9 @@ html{font-size: 62.5%;
     color: white;
     padding: 2rem;
     margin-left: 1.5rem;
-    border-radius: 20%;
     font-size: 2rem;
     font-weight: bold;
+    width: 100%;
     
 }
 .cont a:hover {
@@ -476,12 +404,15 @@ html{font-size: 62.5%;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
+    padding: 5rem;
 }
 .social{
-   padding: 3rem;
+    padding: 2rem;
+   display: flex;
 
 }
-.footer ul{list-style-type: none;
+.social ul{list-style-type: none;
+    display: flex;
 
 }
 .social li a{
@@ -508,14 +439,19 @@ html{font-size: 62.5%;
 
 /* Responsive styles */
 
-@media (max-width: 900px){
+@media (max-width: 768px){
     html{
         font-size: 50%;
     }
    .flexnav{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem 8rem;
+    padding: 2rem 5rem 8rem;
+    margin: 0 auto;
+
+   }
+   .header{
+    max-width: 768px;
    }
     .nav-links {
         display: none;
@@ -530,7 +466,7 @@ html{font-size: 62.5%;
     .burger{
         display: block;
         font-size: 7rem;
-        margin-right: 10rem;
+        margin-right: 5rem;
     }
     .nav-links.active {
         display: flex;
@@ -557,13 +493,14 @@ html{font-size: 62.5%;
 
     .section2{
      background-color: white;
+     max-width: 768px;
     }
     .hero{
         display: flex;
         margin: 0 auto;
-        max-width: 70%;
+        
         max-height: 100%;
-        padding: 5rem 2rem;
+        padding: 5rem 1rem;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
@@ -606,24 +543,58 @@ html{font-size: 62.5%;
        
     }
     .section5{
-    
-        height: 30vh;
         background-color:black;
         color: #cac9c7;
     }
     .flex3{
-        margin-bottom: -10rem;
+       grid-template-columns: 100%;
+       padding-right: 2rem;
+       padding-left: 1rem;
+    }
+    .mywork{
+        padding: 2rem;
+    }
+    .about-me{
+        margin: 0 auto;
+        padding-left: 1rem;
+    }
+    .about-me h1{
+        margin-right: 5rem;
     }
     .about-text{
         width: 100%;
+        margin-top: -5rem;
     }
     .about-img{
         width: 100%;
+     
+    }
+    .about-con{
+        display: flex;
+        padding-left: 10rem;
+        gap: 15rem;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
     }
     .cont-form{
         width: 100%;
     }
     .cont-img{
         width: 100%;
+    }
+    .my-skills p{
+        width: 100%;
+        padding: 1rem 5rem 0;
+    }
+    .skills-grid{
+        grid-template-columns: 100%;
+       padding: 0;
+    }
+    .my-skills .progress-container{
+        margin-bottom: 10px;
+    }
+    .pic{
+        display: none;
     }
 }
